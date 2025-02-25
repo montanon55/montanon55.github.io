@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empresa> <!-- Aqui empieza el contenido de la empresa del xml -->
+	<equipo> <!-- Esta es la tabla de los roles de equipo que hay en la empresa, indicando sus respectivos codigos y descripciones -->
+		<rol roltipo="Jefe Proyecto" idRol="J1">Jefe Proyecto, J1</rol>
+			<descripcion>Un jefe de proyecto planifica, ejecuta y cierra proyectos, coordinando equipos y comunicándose con los interesados para garantizar el cumplimiento de objetivos y plazos. Su papel es clave para asegurar que los proyectos se entreguen a tiempo y dentro del presupuesto.</descripcion>	
+		<rol roltipo="Arquitecto" idRol="A1">Arquitecto, A1</rol>
+			<descripcion>Un arquitecto de proyecto diseña y supervisa la implementación de soluciones tecnológicas, asegurando que la arquitectura del sistema cumpla con los requisitos funcionales y de negocio.</descripcion>
+		<rol roltipo="Analista" idRol="A2">Analista, A2</rol>
+			<descripcion>Un analista se encarga de recopilar, evaluar e interpretar datos para identificar tendencias y patrones que ayuden en la toma de decisiones.</descripcion>
+		<rol roltipo="Analista Programador" idRol="A3">Analista Programador</rol>
+			<descripcion>Un analista-programador combina habilidades de análisis de sistemas y programación, responsable de entender los requisitos del usuario y diseñar, desarrollar y mantener aplicaciones.</descripcion>
+		<rol roltipo="Programador Senior" idRol="P1">Programador Senior, P1</rol>
+			<descripcion>Un programador senior es un profesional con amplia experiencia en desarrollo de software, encargado de diseñar, implementar y optimizar aplicaciones complejas y mentoriza a otros programadores</descripcion>
+		<rol roltipo="Programador" idRol="P2">Programador, P2</rol>
+			<descripcion>Un programador es un profesional que escribe, prueba y mantiene código para desarrollar software y aplicaciones.</descripcion>
+		<rol roltipo="Programador Junior" idRol="P3">Programador Junior, P3</rol>
+			<descripcion>Un programador junior es un profesional en etapa inicial de su carrera, encargado de escribir y mantener código bajo la supervisión de programadores más experimentados.</descripcion>
+		<rol roltipo="Becario" idRol="P4">Becario, P4</rol>
+			<descripcion>Un becario es un estudiante o recién graduado que realiza prácticas en una empresa para adquirir experiencia profesional.</descripcion>
+	</equipo>
+
+	<proyecto estado="En desarrollo"> <!-- Aqui empieza el primero de los 3 proyectos -->
+		<nombre>Proyecto Manhattan</nombre>
+		<fechadeinicio>07/10/2024</fechadeinicio>
+		<fechafin>08/12/2027</fechafin>
+		<presupuesto moneda="Dolar">6.600.600€</presupuesto> <!-- Aqui se le pone un atributo a la moneda para saber en que moneda esta -->
+		<cliente tipo="Empresa"> <!-- Aqui se dan los datos del cliente  -->
+			<razonsocial>U.S Goverment</razonsocial>
+			<cif>A12345678</cif>
+			<direccion>C/Washington.DC 45</direccion>
+			<telefonos> <!-- Aqui se ven los distintos tipos de telefonos/metodos de comunicacion no email-->
+				<telefono telftipo="Movil">345434354</telefono>
+				<telefono telftipo="Movil">343412367</telefono>
+				<telefono telftipo="Fijo">3468978542</telefono>
+				<telefono telftipo="FAX">34 91 123 45 67</telefono>
+			</telefonos>
+		</cliente>
+		<personal> <!-- Aqui se muestran los empleados con toda su informacion que se pide -->
+			<empleado idRol="J1">
+					<idempleado idempleado="JGA98"/> <!-- El idempleado se compone por la prima letra del nombre, las dos primeras del apellido y las dos ultimas cifras de la fecha de nacimiento -->
+					<nombre>Jesus</nombre>
+					<apellidos>Garcia Monserrat</apellidos>
+					<fechanacimiento>5/5/1998</fechanacimiento>
+					<telefono telftipo="Movil">435654342</telefono>
+					<telefono telftipo="Fijo">445621234</telefono>
+					<email>eljefazo@gmail.com</email>
+					<direccion>C/ El jazmin 2</direccion>
+					<Antigüedad unidad="años">13</Antigüedad> 
+			</empleado><!-- Aqui acaba la informacion del empleado para dar paso a los siguientes, como se puede ver hay variedad y todo tiene un sentido logico -->
+			<empleado idRol="A1">
+					<idempleado idempleado="DGA97"/>
+					<nombre>Daniel</nombre>
+					<apellidos>Garcia Monserrat</apellidos>
+					<fechanacimiento>8/5/1997</fechanacimiento>
+					<telefono telftipo="Movil">435663232</telefono>
+					<telefono telftipo="Movil">475427853</telefono>
+					<email>elhermanodeljefazo@gmail.com</email>
+					<direccion>C/ El Alhaurin 24</direccion>
+					<Antigüedad unidad="años">11</Antigüedad>
+			</empleado>
+			<empleado idRol="A1">
+					<idempleado idempleado="AGO76"/>
+					<nombre>Alberto</nombre>
+					<apellidos>Godinez Jimenez</apellidos>
+					<fechanacimiento>9/12/1976</fechanacimiento>
+					<telefono telftipo="Movil">439675342</telefono>
+					<email>AlbertoGodinez@gmail.com</email>
+					<direccion>C/ El jaramillo 23</direccion>
+					<Antigüedad unidad="años">9</Antigüedad>
+			</empleado>
+			<empleado idRol="A2">
+					<idempleado idempleado="RBA02"/>
+					<nombre>Rodrigo</nombre>
+					<apellidos>Blanco Teran</apellidos>
+					<fechanacimiento>6/2/2002</fechanacimiento>
+					<telefono telftipo="Movil">865423242</telefono>
+					<email>Rodriblanco@gmail.com</email>
+					<direccion>C/ Panaderos 2</direccion>
+					<Antigüedad unidad="años">7</Antigüedad>
+			</empleado>
+			<empleado idRol="P1">
+					<idempleado idempleado="AAL98"/>
+					<nombre>Alberto</nombre>
+					<apellidos>Alvarez Rodriguez</apellidos>
+					<fechanacimiento>9/11/1998</fechanacimiento>
+					<telefono telftipo="Movil">976273242</telefono>
+					<email>AlbertoAlvarez@gmail.com</email>
+					<direccion>C/ Triana 23</direccion>
+					<Antigüedad unidad="años">8</Antigüedad>
+			</empleado>
+			<empleado idRol="P2">
+					<idempleado idempleado="DTO99"/>
+					<nombre>Daniel</nombre>
+					<apellidos>Topuria Muñoz</apellidos>
+					<fechanacimiento>9/1/1999</fechanacimiento>
+					<telefono telftipo="Movil">853473242</telefono>
+					<email>TopuriaDaniel@gmail.com</email>
+					<direccion>C/ Canastas 2</direccion>
+					<Antigüedad unidad="años">4</Antigüedad>
+			</empleado>
+			<empleado idRol="P4">
+					<idempleado idempleado="JLA05"/>
+					<nombre>Juan</nombre>
+					<apellidos>Larroux Pierre</apellidos>
+					<fechanacimiento>5/2/2005</fechanacimiento>
+					<telefono telftipo="Movil">732125242</telefono>
+					<email>JuanLarrouxfr@gmail.com</email>
+					<direccion>C/ El altar 2</direccion>
+					<Antigüedad unidad="años">0</Antigüedad>
+			</empleado>
+		</personal>
+	</proyecto> <!-- Aqui termina un proyecto para empezar otro -->
+	<proyecto estado="Aceptado"> <!-- Aqui se puede ver el estado del proyecto y como comienza -->
+		<nombre>Proyecto Dolor de Manos</nombre>
+		<fechadeinicio>05/1/2026</fechadeinicio>
+		<fechafin>08/12/2029</fechafin>
+		<presupuesto moneda="Euro">5.334.543€</presupuesto>
+		<cliente tipo="Particular">
+			<dni>200933298G</dni>
+			<nombre>Mario</nombre>
+			<apellidos>Casas</apellidos>
+			<direccion>C/ Tenazas 5</direccion>
+			<telefono telftipo="Movil">34543433454</telefono>
+			<telefono telftipo="Movil">34341236567</telefono>
+		</cliente>
+		<personal>
+			<empleado idRol="J1">
+					<idempleado idempleado="IGA87"/>
+					<nombre>Ivan</nombre>
+					<apellidos>Ghazaryan Dalashvili</apellidos>
+					<fechanacimiento>4/2/1987</fechanacimiento>
+					<telefono telftipo="Movil">954678234</telefono>
+					<telefono telftipo="Fijo">445657223</telefono>
+					<email>IvanGhazaryan@gmail.com</email>
+					<direccion>C/ Triana 23</direccion>
+					<Antigüedad unidad="años">13</Antigüedad>
+			</empleado>
+			<empleado idRol="A1">
+					<idempleado idempleado="MJI92"/>
+					<nombre>Manuel</nombre>
+					<apellidos>Jimenez Lopez</apellidos>
+					<fechanacimiento>9/10/1992</fechanacimiento>
+					<telefono telftipo="Movil">999965342</telefono>
+					<email>ManuelJimenez@gmail.com</email>
+					<direccion>C/ Aceitunas 54 B</direccion>
+					<Antigüedad unidad="años">8</Antigüedad>
+			</empleado>
+			<empleado idRol="A1">
+					<idempleado idempleado="SGI86"/>
+					<nombre>Sergio</nombre>
+					<apellidos>Gijon Suarez</apellidos>
+					<fechanacimiento>30/7/1986</fechanacimiento>
+					<telefono telftipo="Movil">964234756</telefono>
+					<email>SergioGijon@gmail.com</email>
+					<direccion>C/ Pizarras 45</direccion>
+					<Antigüedad unidad="años">10</Antigüedad>
+			</empleado>
+			<empleado idRol="A2">
+					<idempleado idempleado="RBA02"/>
+					<nombre>Rodrigo</nombre>
+					<apellidos>Blanco Teran</apellidos>
+					<fechanacimiento>6/2/2002</fechanacimiento>
+					<telefono telftipo="Movil">865423242</telefono>
+					<email>Rodriblanco@gmail.com</email>
+					<direccion>C/ Panaderos 2</direccion>
+					<Antigüedad unidad="años">7</Antigüedad>
+			</empleado>
+			<empleado idRol="P2">
+					<idempleado idempleado="YGH98"/>
+					<nombre>Yura</nombre>
+					<apellidos>Ghazaryan Ivankonov</apellidos>
+					<fechanacimiento>23/11/1998</fechanacimiento>
+					<telefono telftipo="Movil">976273242</telefono>
+					<email>GhazaryanYura@gmail.com</email>
+					<direccion>C/ Triana 23</direccion>
+					<Antigüedad unidad="años">3</Antigüedad>
+			</empleado>
+			<empleado idRol="P3">
+					<idempleado idempleado="IGH99"/>
+					<nombre>Igolnik</nombre>
+					<apellidos>Ghazaryan Ivankonov</apellidos>
+					<fechanacimiento>9/1/1999</fechanacimiento>
+					<telefono telftipo="Movil">853473242</telefono>
+					<email>GhazaryanIgolnik@gmail.com</email>
+					<direccion>C/ Triana 23</direccion>
+					<Antigüedad unidad="años">2</Antigüedad>
+			</empleado>
+		</personal>
+	</proyecto>
+	<proyecto estado="Previo"> <!-- Aqui se ve como empieza el ultimo proyecto -->
+		<nombre>Proyecto Purga de Programadores</nombre>
+		<fechadeinicio>09/11/2024</fechadeinicio>
+		<fechafin>08/12/2079</fechafin>
+		<presupuesto moneda="Euro">634.600.600€</presupuesto>
+		<cliente tipo="Empresa">
+			<razonsocial>WinRar</razonsocial>
+			<cif>A12546732</cif>
+			<direccion>C/ Hyper Text 25</direccion>
+			<telefonos>
+				<telefono telftipo="Movil">345456753</telefono>
+				<telefono telftipo="Movil">343412367</telefono>
+				<telefono telftipo="Fijo">3468978542</telefono>
+				<telefono telftipo="FAX">34 91 123 46 67</telefono>
+			</telefonos>
+		</cliente>
+		<personal>
+			<empleado idRol="J1">
+					<idempleado idempleado="EVA81"/>
+					<nombre>Enrique</nombre>
+					<apellidos>Varela Jimenez</apellidos>
+					<fechanacimiento>31/8/1981</fechanacimiento>
+					<telefono telftipo="Movil">666765675</telefono>
+					<email>EnriqueVarela@gmail.com</email>
+					<direccion>C/ Alcala de Henares 23</direccion>
+					<Antigüedad unidad="años">12</Antigüedad>
+			</empleado>
+			<empleado idRol="A1">
+					<idempleado idempleado="SGI86"/>
+					<nombre>Sergio</nombre>
+					<apellidos>Gijon Suarez</apellidos>
+					<fechanacimiento>30/7/1986</fechanacimiento>
+					<telefono telftipo="Movil">964234756</telefono>
+					<email>SergioGijon@gmail.com</email>
+					<direccion>C/ Pizarras 45</direccion>
+					<Antigüedad unidad="años">10</Antigüedad>
+			</empleado>
+			<empleado idRol="A1">
+					<idempleado idempleado="AGO76"/>
+					<nombre>Alberto</nombre>
+					<apellidos>Godinez Jimenez</apellidos>
+					<fechanacimiento>9/12/1976</fechanacimiento>
+					<telefono telftipo="Movil">439675342</telefono>
+					<email>AlbertoGodinez@gmail.com</email>
+					<direccion>C/ El jaramillo 23</direccion>
+					<Antigüedad unidad="años">9</Antigüedad>
+			</empleado>
+			<empleado idRol="A2">
+					<idempleado idempleado="MAS90"/>
+					<nombre>Millan</nombre>
+					<apellidos>Astray Lepanto</apellidos>
+					<fechanacimiento>2/4/1990</fechanacimiento>
+					<telefono telftipo="Movil">657467293</telefono>
+					<email>ElGeneralManco@gmail.com</email>
+					<direccion>C/ Legion 27</direccion>
+					<Antigüedad unidad="años">7</Antigüedad>
+			</empleado>
+			<empleado idRol="P2">
+					<idempleado idempleado="BDE77"/>
+					<nombre>Blas</nombre>
+					<apellidos>DeLezo Caballero</apellidos>
+					<fechanacimiento>18/2/1977</fechanacimiento>
+					<telefono telftipo="Movil">678909890</telefono>
+					<email>HundeBritanicos@gmail.com</email>
+					<direccion>C/ Alberca 1</direccion>
+					<Antigüedad unidad="años">9</Antigüedad>
+			</empleado>
+			<empleado idRol="P2">
+					<idempleado idempleado="ATE71"/>
+					<nombre>Antonio</nombre>
+					<apellidos>Tejero Garcia</apellidos>
+					<fechanacimiento>21/1/1971</fechanacimiento>
+					<telefono telftipo="Movil">456289873</telefono>
+					<email>QuietoTodoElMundo@gmail.com</email>
+					<direccion>C/ Congreso 84</direccion>
+					<Antigüedad unidad="años">6</Antigüedad>
+			</empleado>
+			<empleado idRol="P3">
+					<idempleado idempleado="LCA04"/>
+					<nombre>Luis</nombre>
+					<apellidos>Carrero Blanco</apellidos>
+					<fechanacimiento>22/8/2004</fechanacimiento>
+					<telefono telftipo="Movil">478287383</telefono>
+					<email>LuisCarreroBlanco@gmail.com</email>
+					<direccion>C/ Mar 23</direccion>
+					<Antigüedad unidad="años">1</Antigüedad>
+			</empleado>
+		</personal>
+	</proyecto>
+</empresa>
+
+
+
